@@ -12,16 +12,16 @@ import { RegisterPageComponent } from './components/pages/register-page/register
 import { title } from 'process';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, title:'Tasty Drop'},
-  { path: 'search/:searchTerm', component: HomeComponent, title:'Tasty Drop'},
-  { path: 'tag/:tag', component: HomeComponent, title:'Tasty Drop' },
-  {path:'food/:id', component:FoodPageComponent, title:'Tasty Drop'},
-  {path:'cart-page', component: CartPageComponent, title:'Tasty Drop'},
-  {path:'login', component: LoginPageComponent, title:'Tasty Drop'},
-  {path:'register', component: RegisterPageComponent, title:'Tasty Drop'},
-  {path:'checkout', component: CheckoutPageComponent, canActivate:[AuthGuard], title:'Tasty Drop'},
-  {path:'payment', component: PaymentPageComponent, canActivate:[AuthGuard], title:'Tasty Drop'},
-  {path:'track/:orderId', component: OrderTrackPageComponent, canActivate:[AuthGuard], title:'Tasty Drop'},
+  {path: '', component: HomeComponent, title:'NutriDrive'},
+  {path: 'search/:searchTerm', component: HomeComponent,},
+  {path: 'tag/:tag', component: HomeComponent,  },
+  {path:'food/:id', component:FoodPageComponent, },
+  {path:'cart-page', component: CartPageComponent,},
+  {path:'login', component: LoginPageComponent, },
+  {path:'register', component: RegisterPageComponent, },
+  {path:'checkout', component: CheckoutPageComponent, canActivate:[AuthGuard],},
+  {path:'payment', component: PaymentPageComponent, canActivate:[AuthGuard], },
+  {path:'track/:orderId', component: OrderTrackPageComponent, canActivate:[AuthGuard], },
 ];
 
 @NgModule({
